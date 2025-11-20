@@ -43,11 +43,16 @@ This repository contains a collection of Java exercises designed to reinforce fu
     ```bash
     git clone https://github.com/federicopratico/1.1-Inheritance_Polymorphism-Level2.git
     ```
-2.  **Navigate to the project directory:**
+    or with SSH
+    ```bash
+    git clone git@github.com:federicopratico/1.1-Inheritance_Polymorfism-Level2.git
+    ```
+    
+3.  **Navigate to the project directory:**
     ```bash
     cd Java-OOP-Exercises
     ```
-3.  **Open in IDE:**
+4.  **Open in IDE:**
     Open the folder in IntelliJ IDEA (or your preferred IDE) and let it index the source files.
 
 ## 🚀 Execute
