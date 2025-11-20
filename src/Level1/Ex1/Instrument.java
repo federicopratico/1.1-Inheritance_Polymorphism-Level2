@@ -11,7 +11,7 @@ public abstract class Instrument {
     }
 
     static {
-        System.out.println("This block executes when a class is loaded");
+        System.out.println("It's the static block from root class Instrument, I execute only once when my class is loaded\n");
     }
 
     public Instrument() {

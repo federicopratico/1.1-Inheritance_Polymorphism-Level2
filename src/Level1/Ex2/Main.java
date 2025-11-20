@@ -1,5 +1,7 @@
 package Level1.Ex2;
 
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Can access and print Car.brand because is a static fields");
@@ -20,16 +22,24 @@ public class Main {
         Car.brake();
         System.out.println();
 
-        System.out.println("It's necesary to instantitate a Car Object to call the method \"public void accelerate()\"");
+        System.out.println("It's necessary to instantiate a Car Object to call the method \"public void accelerate()\"");
+        System.out.println("CREATING A CAR OBJECT...");
         Car car = new Car("Fiesta", 90);
+        System.out.println("Variable name: car\n" + "Brand: " + Car.brand + "\nModel: " + Car.model + "\nHorsePower: " + car.getHorsePower());
+        System.out.println();
         car.accelerate();
+        System.out.println();
 
-        System.out.println("It is possible to cahnge the value of the static variable \"model\" in the contructor.");
+        System.out.println("It is possible to change the value of the static variable \"model\" in the constructor.");
+        System.out.println("CREATING A SECOND CAR OBJECT...");
         Car car1 = new Car("Mustang", 400);
 
-        System.out.println("Brand: " + Car.brand + "\nModel: " + Car.model + "\nHorsePower: " + car1.getHorsePower());
+        System.out.println("Variable name: car1\n" + "Brand: " + Car.brand + "\nModel: " + Car.model + "\nHorsePower: " + car1.getHorsePower()+"\n");
 
+        System.out.println("Variable name: car\n" + "Brand: " + Car.brand + "\nModel: " + Car.model + "\nHorsePower: " + car.getHorsePower()+"\n");
 
+        System.out.println("The creation of a second Car object caused the changing of the static attribute Car.model.\n" +
+                "Now the Car.Model attribute of all cars is the same of the object pointed to car1 variable.");
 
     }
 }
